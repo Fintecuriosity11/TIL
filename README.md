@@ -1,3 +1,3 @@
 # Today I Learned (TIL) 
 
-> This repository consist of my daily studyings, based on daily basis.
+> This repository consist of my daily studyings, will be updated on daily basis.
