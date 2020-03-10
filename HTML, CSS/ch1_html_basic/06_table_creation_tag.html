@@ -1,0 +1,23 @@
+<!-- 웹문서에서 자료를 정리할 때 자주 사용하는 요소가 '표(table)' -->
+<!-- 표는 행(row)와 열(column)으로 이루어져 있고 행과 열이 만나 이루는 영역을 셀이라 부름 -->
+
+<table border = "1">                                                <-- 2 * 3 표 -->
+  <tr>                                                              <!-- 행을 만드는 tag -->
+    <th> 제목 셀 </th>                                              <!-- 셀의 제목을 담는 tag -->
+    <td> 1행 2열 (1 row 2 column) </td>                             <!-- 셀에 들어가는 내용을 담는 tag -->
+    <td> 1행 3열 (1 row 3 column) </td>                              
+  </tr>
+  <tr>
+    <th> 제목 셀 </th>
+    <td> 2행 2열 (2 row 2 column) </td>          
+    <td> 2행 3열 (2 row 3 column) </td>
+</table>
+
+<td colspan="합칠 셀의 갯수"> 내용 </td>                             <!-- 열을 합친다 -->
+<th colspan="합칠 셀의 갯수"> 내용 </th>                                                                   
+
+<td rowspan="합칠 셀의 갯수"> 내용 </td>                             <!-- 행을 합친다 -->
+<th rowspan="합칠 셀의 갯수"> 내용 </th>
+
+<caption>                     </caption>                             <!-- 표의 위쪽 중앙에 제목을 붙이는 태그 -->
+<figcaption>               </figcaption>
