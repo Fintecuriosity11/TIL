@@ -1,0 +1,37 @@
+<!--<fieldset>, <legend> tag로 폼 요소 그룹으로 묶기 -->
+
+<!--쇼핑몰 사이트에서 주문서를 작성하는 폼에서 '사용자정보'와'배송정보'를 나누어 표시하면 사용자가 정보를 입력하기 편하듯이 -->
+<!--하나의 폼안에서 여러 구역을 나누어 표시하려고 할 때 <fieldset>, <legend>태그를 사용 -->
+
+<!--<fieldset [속성="속성 값"]>...</fieldset> -->
+
+
+<form>
+  <fieldset>                      <!-- <fieldset> 태그로 묶은 부분-->
+    <legend>개인 정보</legend>    <!--제목넣기-->
+    <ul>
+      <li>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+      </li>
+      <li>
+        <label for="mail">메일주소</label>
+        <input type="text" id="mail">
+      </li>
+    </ul>
+  </fieldset>  
+  
+  <fieldset>                      
+    <legend>로그인 정보</legend>   
+    <ul>
+      <li>
+        <label for="id">아이디</label>
+        <input type="text" id="id">
+      </li>
+      <li>
+        <label for="mail">비밀번호</label>
+        <input type="text" id="pwd">
+      </li>
+    </ul>
+  </fieldset>  
+</form>  
