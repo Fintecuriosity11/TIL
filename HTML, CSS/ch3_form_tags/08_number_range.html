@@ -1,0 +1,28 @@
+<!--value는 필드에 표시할 초기값이다. -->
+<!--step은 짝수나 홀수 등 특정 숫자로 제한하려고 할 때 숫자 간격을 지정할 수 있다. 기본 값은 1이며 생략할 수 있다. -->
+<!--min는 필드에 입력할 수 있는 최솟값을 지정한다. type="range"일 때 기본 최솟값은 0이다. -->
+<!--max은 필드에 입력할 수 있는 최댓값을 지정한다. type="range"일 때 기본 최댓값은 100이다. -->
+
+
+
+
+
+
+<!--value= 처음에 화면에 나타나는 값 "1" -->
+<!--min/max = 0부터 10까지 조절 가응 -->
+<!--step= 1씩 증가 또는 감소 -->
+
+<ul>
+  <li>
+      <label class="reg" for="member"> 참여인원<small>(최대10명)</small></label>
+      <input type="number" id="member" value="1" min="0" max="10" step="1">
+  </li>    
+  <li>
+      <label class="reg" for="stuff"> 지원물품<small>(1인당 5개)</small></label>
+      <input type="number" id="stuff" value="1" min="0" max="50" step="5" size="5">
+  </li>
+  <li>
+      <label class="reg" for="satis"> 희망단계<small>(하,중,상)</small></label>
+      <input type="range" id="satis" value="1" min="1" max="3">
+  </li>
+</ul>  
