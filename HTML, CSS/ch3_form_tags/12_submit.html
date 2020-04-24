@@ -1,0 +1,19 @@
+<!--type="submit", type="reset" / 서버 전송, 리셋 버튼 넣기 -->
+
+<!--reset 버튼은 <input> 요소에 입력된 모든 정보를 재설정해 사용자가 입력한 내용을 모두 지움 -->
+<!--이때 value 속성을 사용해 버튼에 표시할 내용 지정 -->
+
+<!--type="submit"은 사용자가 폼에 입력한 정보를 서버로 전송하는 submit버튼을 넣는다 -->
+<!--submit 버튼으로 전송된 정보는 처음에 <form>태그에서 지정한 폼 처리 프로그램으로 넘겨짐 -->
+
+
+<!--기본값 -->
+
+<input type="submit | reset" [value="버튼 내용"] [속성="속성 값"]>
+
+
+<form action="register.php" method="post">           <!--서버로 전송 -->
+  <label> 메일 주소 <input type="text"></label>       
+  <input type="submit" value="제출">                 <!--서버로 전송 -->
+  <input type="reset" value="다시 입력">
+</form>
