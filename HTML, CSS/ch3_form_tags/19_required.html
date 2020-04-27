@@ -1,0 +1,11 @@
+<!--required 속성- 필수 필드 지정하기 -->
+
+<!--내용을 폼에 입력한 후 submit 버튼을 클릭하면 폼을 서버로 전송하는데 필수 필드에 필요한 내용이 다 채워졌는지 검수-->
+<!--필수적으로 입력해야 하는 내용에는 required 속성을 지정해 필수 필드로 만듦 -->
+
+<!--required 속성은 불린 값(boolean value)이기 때문에 이 속성을 사용하려면 required="required" 혹은 required라고 입력 -->
+
+<!--다음은 '이름'필드를 필수 필드로 지정한 예제로 '이름' 필드를 비워 놓고 [신청하기] 버튼을 눌러 전송할 경우 에러 발생-->
+
+<label class="reg" for="uname">이름</label>
+<input type="text" id="uname" autofocus required>
