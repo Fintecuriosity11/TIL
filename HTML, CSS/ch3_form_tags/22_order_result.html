@@ -1,0 +1,58 @@
+<!--3단원 내용 최종 복습 및 실습 -->
+<!--Form요소 중 가장 많이 사용하는 요소를 이용하여 상품 주문서 작성 -->
+
+<body>                            <!--실제 브라우저,웹페이지 상에 표시될 내용 기록 -->
+  <div class="container">         <!--div는 블럭, 인라인 요소(박스형태로 영역으로 설정, 그안에 정렬) class 속성: container -->  
+    <h1>상품 주문서</h1>          <!-- heading part, H1으로 설정하여 제목(heading)을 가장 크게 display -->
+    <fieldset>                   <!--fieldset=하나의 폼 안에서 여러 구역 나누어 표시, 태그 사이의 폼들을 하나의 영역으로 묶고 외각선생성-->  
+      <legend>개인 정보</legend>  <!--legend 태그는 태그로 묶은 그룹에 제목을 붙여줌/제목 넣기 --> 
+      <ul>
+        <li>
+          <label for="uname" class="title">이름</label>
+          <input type="text" id="uname" placeholder="여백없이 입력" required>  <!-- <input> 사용자 입력, text로 입력, placeholder(힌트)-->
+        </li>
+        <li>
+          <label for="tell" class="title">연락처</label>
+          <input type="tel" id="uname" placeholder="연락가능한 번호">
+        </li>
+      </ul>  
+    </fieldset>                   <!-- <fieldset>태그로 묶은 부분 끝 -->
+    <fieldset>
+      <legend>배송지 정보</legend>
+      <ul>
+        <li>
+          <label for="addr" class="title">주소</label>
+          <input type="text" size="40" id="addr" required>  <!-- required, 필수  -->
+        </li>
+        <li>
+          <label for="tel2" class="title">전화번호</label>
+          <input type="tel" id="tel2" required>
+        </li>
+        <li>
+          <label for="memo" class="title">메모</label>
+          <textarea cols="40" rows="3" id="memo"></textarea>
+        </li>   
+      </ul>
+    </fieldset> 
+    <fieldset>
+      <legend>주문 정보</legend>
+      <ul>
+        <li>
+          <label><input type="checkbox">과테말라 안티구아 (100g) </label>
+          <label><input tupe="number" value="0" min="0" max="5">개 </label> <!-- min, max/ 수량 최소,최대값 선택 -->
+        </li>
+        <li>
+          <label><input type="checkbox">인도네시아 만델링 (200g) </label>
+          <label><input tupe="number" value="0" min="0" max="10">개 </label>
+        </li>
+        <li>
+          <label><input type="checkbox">브라질 버본산토스 (300g) </label>
+          <label><input tupe="number" value="0" min="0" max="15">개 </label>
+        </li>   
+      </ul>
+    </fieldset>  
+    <input type="submit" value="주문하기">       <!-- 전송(submit)버튼 추가, 주문하기 -->              
+    <input type="reset" value="다시 작성">       <!-- 리셋(reset)버튼 추가, 다시 작성 -->
+  </div>
+</body>
+
