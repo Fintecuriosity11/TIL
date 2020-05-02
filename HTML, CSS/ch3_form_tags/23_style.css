@@ -1,0 +1,28 @@
+<style>                              /* CSS style 속성 시작 */
+  .container {
+    width:600px;
+    margin:0 auto;
+  }
+  ul {                                /* 순서에 없는 목록에 적용할 스타일 */
+      list-style-type:none;           /* 불릿 없앰 */
+  }
+  label.title {                       /* class=title인 label에 적용할 스타일 */
+    font-weight: bold;                /* 굵은 글자 */
+    width: 80px;                      /* 너비 80px */
+    float: left;                      /*왼쪽부터 배치 */
+  }
+  div.centered {                      /*class=centered인 div에 적용할 스타일 */
+    text-align: center:               /*가운데 정렬 */
+  }
+  fieldset {                          /*필드셋에 적용할 스타일 */
+    margin: 15px 10px                 /*상하 마진 15px, 좌우 마진 10px */
+  }
+  fieldset legend {                   /*fieldset (필드셋 제목) */
+    font-weight: bold;                /*굵은 글자 */
+    font-size:18px;                   /*글자 크기 18px */
+    color: purple;                    /*자주 색 글자 */
+  }
+  ul li {                             /*목록의 각 항목 */
+    margin-bottom: 10px;              /*아래 마진 10px */
+  }  
+</style>  
