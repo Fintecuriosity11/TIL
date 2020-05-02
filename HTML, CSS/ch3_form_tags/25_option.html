@@ -1,0 +1,17 @@
+<!--<select> 태그를 사용해 만든 드롭다운은 기본적으로 한가지 옵션 표시, 화살표 클릭 후 나머지 옵션 살펴본 후 한가지 항목 선택 -->
+<!--size 속성이나 multiple 속성을 사용하면 드롭다운 목록의 크기나 선택할 항목의 개수를 조절 가능.-->
+
+<!--<option> 태그에서 사용하는 속성은 value, selected 속성이 있음.-->
+<!--<select> 태그와 <option> 태그의 속성 이용-->
+<!--<select> 태그에 size="5"를 지정해 한꺼번에 5개씩 보여주고 multiple 속성을 지정했기 때문에 드롭다운 목록에서 여러항목 동시선택-->
+<!--전송 버튼을 클릭하면 선택한 여러 옵션이 서버로 전송.-->
+
+<label class="reg" for="class">학과</label>
+<select size="5" id="class" multiple>                        <!-- 5개씩 보이고 (size)여러 옵션 선택 가능 (multiple)-->
+  <option value="archi">건축공학과</option>
+  <option value="mechanic">기계공학과</option>
+  <option value="indust">산업공학과</option>
+  <option value="elec">전기전자공학과</option>
+  <option value="computer" selected>컴퓨터공학과</option>    <!-- 기본으로 선택된 '컴퓨터공학과'-->
+  <option value="chemical">화학공학과</option>
+</select>  
